@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+
+        <!-- Campo de entrada para o nome de usuário -->
+        <p>
+            <label for="iuso">Usuário</label>
+            <input type="text" name="uso" id="iuso" required minlength="5" maxlength="10" size="7" autocomplete="username">
+            <!-- 'required' obriga o preenchimento deste campo, minlength e  maxlength, mim e max de letras no nome do usuario, caso queira mudar o tamanho da caixa coloque size, use placeholder se quiser colocar nome na caixa ex 'nome do usuario', sempre coloque autocomplete ex - para nomes, senhas e sempre ligue ele no form.-->
+        </p>
+    
+        <!-- Campo de entrada para a senha -->
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="10" size="10" autocomplete="current-password">
+            <!-- 'required' obriga o preenchimento deste campo -->
+        </p>
+        
+        <!-- Botões de submissão e reset do formulário -->
+        <p>
+            <input type="submit" value="Enviar">
+            <!-- 'submit' envia os dados do formulário para a ação definida -->
+            
+            <input type="reset" value="Limpar">
+            <!-- 'reset' limpa todos os campos do formulário -->
+        </p>
+    
+    </form>
+    </p>
+</body>
+</html>

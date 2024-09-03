@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário01</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> Meu primeiro  formulário</h1>
+    <form action="cadastro.php" autocomplete="off"> 
+        
+        
+        
+        <!--Tag Form usada para criar formularios-->
+        <!--caso queira desligar automaticamente- use autocomplete-->
+        <!--action criar um local onde vai mandar os dados-->
+
+
+ 
+
+
+
+<form action="cadastro.php" autocomplete="off" method="post"></form> <!-- Tag <form>: Cria um formulário para entrada de dados do usuário. O atributo "action" define o script (cadastro.php) que processará os dados do formulário. "autocomplete=off" desativa a sugestão automática de preenchimento. method="post" = proteger os dados que fica no dominio-->
+
+    <p><label for="inome">Nome:</label></p> <!-- Tag <p>: Cria um parágrafo para separar o conteúdo. Tag <label>: Define um rótulo para o campo de entrada (input). O atributo "for" associa o rótulo ao campo de entrada com o id "inome". -->
+    
+    <input type="text" name="nome" id="inome"> <!-- Tag <input>: Cria um campo de entrada de texto. O atributo "type" define o tipo de entrada (texto). O atributo "name" define o nome do campo para ser enviado ao script. O atributo "id" é usado para vincular o campo ao rótulo correspondente. -->
+    
+    <p><label for="isobrenome">Sobrenome:</label></p> <!-- Tag <p>: Cria um parágrafo para separar o conteúdo. Tag <label>: Define um rótulo para o campo de entrada "sobrenome". O atributo "for" associa o rótulo ao campo de entrada com o id "isobrenome". -->
+    
+    <input type="text" name="sobrenome" id="isobrenome"> <!-- Tag <input>: Cria um campo de entrada de texto para o sobrenome. O atributo "name" define o nome do campo para o envio ao script. O atributo "id" é usado para vincular o campo ao rótulo correspondente. -->
+    
+    <input type="submit" value="Enviar"> <!-- Tag <input>: Cria um botão de envio para o formulário. O atributo "type=submit" define que o botão submeterá o formulário. O atributo "value" define o texto exibido no botão (Enviar). -->
+    
+   
+
+
+    </form>
+    
+</body>
+</html>
